@@ -1,6 +1,7 @@
 package ssms.SSMS_Automation.modules;
 
 import org.apache.xmlbeans.impl.jam.internal.elements.VoidClassImpl;
+import org.apache.xmlbeans.impl.xb.xsdschema.Public;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -17,18 +18,7 @@ public class Login extends Base {
 	public final String homePage_xpath="//*[contains(@class,'sidenav-content')]";
 	public final String loginErrorMsg_xpath="//*[text()='Login Failed, Reason : Bad credentials']";
 	public final String forgotPassword_class="forget-password";
-	public final String registerForm_class="mat-tab-label-content";
-	public final String regFullName_xpath="//input[@formcontrolname='Name']";
-	public final String regEmailId_xpath="//input[@formcontrolname='EmailId']";
-    public final String regMobileNumber_xpath="//input[@formcontrolname='MobileNo']";
-    public final String regUserName_xpath="//input[@formcontrolname='UserName']";
-    public final String regPassword_xpath="//input[@formcontrolname='Password']";
-    public final String regConfirmPassword_xpath="//input[@formcontrolname='ConfirmPassword']";
-    
-    
-    
-    
-    
+	
 	public void logIn(String username,String password) {
 		try {         
 			driver.findElement(By.xpath(loginLink_xpath)).click();
@@ -74,22 +64,7 @@ public class Login extends Base {
 		}
 	}
 	
-	public void validateRegisterFormElements() {
-		try {
-			driver.findElement(By.xpath(loginLink_xpath)).click();
-			driver.findElement(By.className(registerForm_class)).click();
-			driver.findElement(By.xpath(regFullName_xpath));
-			driver.findElement(By.xpath(regEmailId_xpath));
-			driver.findElement(By.xpath(regMobileNumber_xpath));
-			driver.findElement(By.xpath(regUserName_xpath));
-			driver.findElement(By.xpath(regPassword_xpath));
-			driver.findElement(By.xpath(regConfirmPassword_xpath));
-			driver.findElement(By.className(forgotPassword_class));
-		}catch(Exception e) {
-			System.out.println(e);
-			Assert.fail("Fail due to exception "+e.getMessage());
-		}
-	}
+	
 //	@Test(priority=0, description="Verify Login with Valid Username and Valid Password")
 //	public void Tc_Login_001() {
 //		logIn("pawan", "punshegde");

@@ -2,41 +2,41 @@
 <testng-results skipped="0" failed="1" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="11525" started-at="2019-11-19T16:25:56Z" finished-at="2019-11-19T16:26:08Z">
+  <suite name="Default suite" duration-ms="12665" started-at="2019-11-20T04:11:24Z" finished-at="2019-11-20T04:11:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="11525" started-at="2019-11-19T16:25:56Z" finished-at="2019-11-19T16:26:08Z">
+    <test name="Default test" duration-ms="12665" started-at="2019-11-20T04:11:24Z" finished-at="2019-11-20T04:11:36Z">
       <class name="ssms.SSMS_Automation.testCase.LoginRegistration">
-        <test-method status="PASS" signature="setup()[pri:0, instance:ssms.SSMS_Automation.testCase.LoginRegistration@3e6fa38a]" name="setup" is-config="true" duration-ms="9161" started-at="2019-11-20T00:25:56Z" finished-at="2019-11-20T00:26:05Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:ssms.SSMS_Automation.testCase.LoginRegistration@66a3ffec]" name="setup" is-config="true" duration-ms="9579" started-at="2019-11-20T12:11:24Z" finished-at="2019-11-20T12:11:33Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="Tc_Login_006()[pri:5, instance:ssms.SSMS_Automation.testCase.LoginRegistration@3e6fa38a]" name="Tc_Login_006" duration-ms="367" started-at="2019-11-20T00:26:05Z" description="Verify that the Registration form contains Fullname, Email Id, Mobile number, Username,Password,Conform Password ,Register Button,Forgot Password Link" finished-at="2019-11-20T00:26:06Z">
+        <test-method status="FAIL" signature="Tc_Login_011()[pri:0, instance:ssms.SSMS_Automation.testCase.LoginRegistration@66a3ffec]" name="Tc_Login_011" duration-ms="946" started-at="2019-11-20T12:11:33Z" description="Verify Login with Valid Username and Valid Password" finished-at="2019-11-20T12:11:34Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Fail due to exception no such element: Unable to locate element: {"method":"xpath","selector":"//input[@formcontrolname='Name']"}
+              <![CDATA[Fail due to exception no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),' Hello, PAWAN ')]"}
   (Session info: chrome=78.0.3904.108)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'P0613', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\ADARSH~1.LOO\AppData\Local\Temp\scoped_dir1076_144908826}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57877}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=windows nt, setWindowRect=true}]
-Session ID: 2c85d649a55f5f5ae91a319984815241
-*** Element info: {Using=xpath, value=//input[@formcontrolname='Name']}]]>
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\ADARSH~1.LOO\AppData\Local\Temp\scoped_dir16440_1400768679}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:63369}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=windows nt, setWindowRect=true}]
+Session ID: f6b07c92681bf4f5ba70978f957556f6
+*** Element info: {Using=xpath, value=//*[contains(text(),' Hello, PAWAN ')]}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Fail due to exception no such element: Unable to locate element: {"method":"xpath","selector":"//input[@formcontrolname='Name']"}
+              <![CDATA[java.lang.AssertionError: Fail due to exception no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(),' Hello, PAWAN ')]"}
   (Session info: chrome=78.0.3904.108)
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.4.0', revision: 'unknown', time: 'unknown'
 System info: host: 'P0613', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_202'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\ADARSH~1.LOO\AppData\Local\Temp\scoped_dir1076_144908826}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:57877}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=windows nt, setWindowRect=true}]
-Session ID: 2c85d649a55f5f5ae91a319984815241
-*** Element info: {Using=xpath, value=//input[@formcontrolname='Name']}
+Capabilities [{networkConnectionEnabled=false, chrome={chromedriverVersion=78.0.3904.70 (edb9c9f3de0247fd912a77b7f6cae7447f6d3ad5-refs/branch-heads/3904@{#800}), userDataDir=C:\Users\ADARSH~1.LOO\AppData\Local\Temp\scoped_dir16440_1400768679}, timeouts={implicit=0.0, pageLoad=300000.0, script=30000.0}, pageLoadStrategy=normal, unhandledPromptBehavior=dismiss and notify, strictFileInteractability=false, platform=ANY, proxy=Proxy(), goog:chromeOptions={debuggerAddress=localhost:63369}, acceptInsecureCerts=false, browserVersion=78.0.3904.108, browserName=chrome, javascriptEnabled=true, platformName=windows nt, setWindowRect=true}]
+Session ID: f6b07c92681bf4f5ba70978f957556f6
+*** Element info: {Using=xpath, value=//*[contains(text(),' Hello, PAWAN ')]}
 	at org.testng.Assert.fail(Assert.java:94)
-	at ssms.SSMS_Automation.modules.Login.validateRegisterFormElements(Login.java:90)
-	at ssms.SSMS_Automation.testCase.LoginRegistration.Tc_Login_006(LoginRegistration.java:47)
+	at ssms.SSMS_Automation.modules.HomePage.logOut(HomePage.java:19)
+	at ssms.SSMS_Automation.testCase.LoginRegistration.Tc_Login_011(LoginRegistration.java:61)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -66,8 +66,8 @@ Session ID: 2c85d649a55f5f5ae91a319984815241
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Tc_Login_006 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:ssms.SSMS_Automation.testCase.LoginRegistration@3e6fa38a]" name="tearDown" is-config="true" duration-ms="1972" started-at="2019-11-20T00:26:06Z" finished-at="2019-11-20T00:26:08Z">
+        </test-method> <!-- Tc_Login_011 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ssms.SSMS_Automation.testCase.LoginRegistration@66a3ffec]" name="tearDown" is-config="true" duration-ms="2116" started-at="2019-11-20T12:11:34Z" finished-at="2019-11-20T12:11:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import ssms.SSMS_Automation.Base;
 import ssms.SSMS_Automation.modules.HomePage;
 import ssms.SSMS_Automation.modules.Login;
+import ssms.SSMS_Automation.modules.Register;
 
 
 
@@ -12,6 +13,7 @@ public class LoginRegistration extends Base {
 
 	static Login login = new Login();
 	static HomePage homePage = new HomePage();
+	static Register register = new Register();
 	@Test(priority=0, description="Verify Login with Valid Username and Valid Password")
 	public void Tc_Login_001() {
 		login.logIn("pawan", "punshegde");
@@ -44,6 +46,18 @@ public class LoginRegistration extends Base {
 	
 	@Test(priority=5, description="Verify that the Registration form contains Fullname, Email Id, Mobile number, Username,Password,Conform Password ,Register Button,Forgot Password Link")
 	public void Tc_Login_006() {
-		login.validateRegisterFormElements();
+		register.validateRegisterFormElements();
+	}
+	
+	@Test(priority=8, description="Verify that system generates a validation message when clicking on submit button without filling all the mandatory fields.")
+	public void Tc_Login_009() {
+		register.validateRegisterErrorMsg();
+	}
+	
+	@Test(priority=0, description="Verify Login with Valid Username and Valid Password")
+	public void Tc_Login_011() {
+		login.logIn("PAWAN", "punshegde");
+		login.validateHomePage();
+		//homePage.logOut();
 	}
 }

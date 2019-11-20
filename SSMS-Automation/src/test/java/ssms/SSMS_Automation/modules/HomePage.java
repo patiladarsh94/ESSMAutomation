@@ -7,7 +7,7 @@ import ssms.SSMS_Automation.Base;
 
 public class HomePage extends Base{
 	
-	public final String account_xpath="//*[contains(text(),'PAWAN')]";
+	public final String account_xpath="//*[contains(text(),' Hello ')]";
 	public final String signOut_xpath="//*[contains(text(),'Sign Out')]";
 	
 	
